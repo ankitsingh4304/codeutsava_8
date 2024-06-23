@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codeutsava 8.0</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <style>
+    .bg-container {
+      background-image: url("./universebackground.png");
+      background-size: cover;
+    }
+    .container-fluid {
+      background-color: black;
+      padding: 10px;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+    .navbar-brand {
+      background-color: black;
+    }
+    .tcp-brand {
+      background-color: black;
+    }
+
+    .intro-section {
+      height: 100vh;
+      background-image: url("./WhatsApp\ Video\ 2024-06-21\ at\ 17.33.40_949a36d0.gif");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .intro-section::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .intro-section .content {
+      position: relative;
+      z-index: 1;
+    }
+    .content h1 {
+      padding: 20px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section:nth-child(even) {
+      background-color: #f4f4f4;
+    }
+    .navbar-expand-lg {
+      background-color: black;
+      width: 100%;
+      top: 0;
+    }
+    .navbar {
+      background-color: black;
+      position: sticky;
+      width: 100%;
+      top: 0;
+    }
+    .navbar-nav {
+      font-size: 21px;
+      display: flex;
+      gap: 15px;
+    }
+    .Guidlines {
+      background-color:  #38b6ff;
+      color: white;
+      margin-left: 20px;
+      font-size: 20px;
+      padding: 5px;
+      margin-right: 20px;
+      border-radius: 10px;;
+    }
+    .Brochure {
+      background-color:#38b6ff;;
+      color: white;
+      font-size: 20px;
+      padding: 5px;
+      margin-left: 20px;
+      margin-right: 35px;
+      border-radius: 10px;
+    }
+    .nav-item a {
+      color: white !important;
+    }
+    .section-for-welcome {
+      text-align: center;
+      margin-top: 90px;
+      color: #fff;
+      font-family: Poppins;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 82px;
+    }
+    .section-for-code {
+      text-align: center;
+      padding: 0;
+    }
+    .GAIN {
+      color: #38b6ff;
+      font-family: Poppins;
+      font-size: 36px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 82px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 25px;
+    }
+    .Pain{
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #f4f4f4;
+      font-weight: 500;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    .social-media-icons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .social-media-icons a {
+      color: white;
+      font-size: 30px;
+    }
+    .section{
+      background-image: url("./universebackground.png");
+    }
+    .section-title {
+      font-size: 36px;
+      text-align: center;
+      color: whitesmoke;
+      margin-bottom: 20px;
+    }
+    .section-content {
+      font-size: 18px;
+      color:  #38b6ff;
+      line-height: 1.6;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .codeutsava__section6-sponser-image {
+       padding: 25px;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      background-image: url(./images/universebackground.png);
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+.MOM {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 15px;
+  font-size: 25px;
+}
+@media (max-width: 768px) {
+      .navbar-nav {
+        font-size: 18px;
+        flex-direction: column;
+        align-items: center;
+      }
+      .section-for-welcome {
+        font-size: 36px;
+        line-height: 50px;
+      }
+      .GAIN {
+        font-size: 28px;
+        line-height: 50px;
+      }
+      .Pain {
+        font-size: 16px;
+      }
+      .Guidlines, .Brochure {
+        font-size: 12px;
+        padding: 3px;
+      }
+      .content h1 img {
+        height: 45px;
+      }
+      .section {
+        padding: 40px 10px;
+      }
+      .section-title {
+        font-size: 28px;
+      }
+      .section-content {
+        font-size: 16px;
+      }
+      .social-media-icons a {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="intro-section" id="intro">
+    <div class="content">
+      <h1><img src="./Screenshot 2024-06-21 205356.png" height="55"></h1>
+      <p>Come with us and indulge into intergalactic multiverse of Codefest Celebration!</p>
+      <a href="#home" class="btn btn-primary" onclick="scrollToHome()">Join us here</a>
+    </div>
+  </div>
+
+  <div class="bg-container" id="home">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./codeutsava symbol.png" height="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button class="Guidlines">
+          <a href="Guidelines.pdf" download="Guidlines">Guidelines</a>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#games">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sponsors">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#merchandise">Merchandise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <button class="Brochure">
+          <a href="./Brochure (1).pdf" download="Brochure">Brochure</a>
+        </button>
+        <a class="tcp-brand" href="#"><img src="./tcp symbol img.png" height="50"></a>
+      </div>
+    </nav>
+    <div class="section-for-welcome">
+      <p>WELCOME TO</p>
+    </div>
+    <div class="section-for-code">
+      <img src="./spacefont2.png.jpeg" height="195">
+    </div>
+    <div class="GAIN">
+      <p>CODE.Celebrate.Innovate</p>
+    </div>
+    <div class="Pain">
+      <p>Central India's Largest Coding Event. Dates To be Released Soon!!</p>
+    </div>
+  <div id="about" class="section">
+    <h1 class="section-title">About Us</h1>
+    <div class="section-content">
+      <p>Codeutsava is an annual hackathon event organized to bring together the brightest minds in technology and innovation. Our mission is to foster creativity, collaboration, and coding skills through a series of challenges and workshops.</p>
+      <br>
+      <p>Students from all over India can take part in this event, attend Workshops, participate in the Hackathon, and various other coding related activities which are organized under this event.</p>
+      <hr>
+    </div>
+  </div>
+
+  <div id="events" class="section">
+    <div class="section-title">Events</div>
+    <div class="section-content">
+      <p>Our event lineup includes hackathons, coding competitions, workshops, keynote speeches, and networking sessions. Stay tuned for the detailed schedule of events coming soon!</p>
+      <hr>
+    </div>
+  </div>
+
+  <div id="games" class="section">
+    <div class="section-title">Games</div>
+    <div class="section-content">
+      <p>Join us for some fun and exciting games that challenge your problem-solving skills and creativity. Participate and win amazing prizes!</p>
+      <hr>
+    </div>
+  </div>
+  <div id="merchandise" class="section">
+    <div class="section-title">Merchandise</div>
+    <div class="section-content">
+      <p>Check out our exclusive Codeutsava merchandise! From t-shirts to mugs, we have a variety of items to commemorate your participation. Visit our store to grab your favorites!</p>
+    </div>
+  </div>
+  <div id="sponsors" class="section">
+    <div class="section-title">Sponsors</div>
+    <div class="section-content">
+      <p>We are grateful to our sponsors for their support and contributions. Their involvement helps us to provide a platform for innovation and learning. Interested in becoming a sponsor? Contact us for more information.</p>
+      <div class="codeutsava__section6-sponser-list bronze">
+        <div class="codeutsava__section6-sponser-image"><img src=".?leetcode.png"></div>
+       <div class="codeutsava__section6-sponser-image"><img src="./codeforces.png"></div>
+       <div class="codeutsava__section6-sponser-image"><img src="./sbi2.png"></div>
+    </div>
+      <hr>
+    </div>
+  </div>
+  <div id="faq" class="section">
+    <div class="section-title">FAQ</div>
+    <div class="section-content">
+      <p>Have questions? We have answers! Visit our FAQ section to learn more about the event, registration process, and other details. If you still have queries, feel free to reach out to us.</p>
+      <hr>
+    </div>
+  </div>
+  <div id="contact" class="section">
+    <div class="section-title">Contact Us</div>
+    <div class="section-content">
+      <p>We'd love to hear from you! Whether you have questions, suggestions, or feedback, feel free to reach out to us. You can contact us via email at info@codeutsava.com or follow us on our social media channels.</p>
+      <p>Email: <a href="mailto:info@codeutsava.com">info@codeutsava.com</a></p>
+       <div class="social-media-icons">
+        <a href="https://github.com/TCP-Tech" target="_blank">
+          <svg xmlns = "http://www.w3.org/2000/svg"width="30" height="30" fill="currentcolor" class="bi bi-github" viewBox="0 0 496 512">
+          <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/codeutsava" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.7191.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.852-.04 1.433-.174 1.942-.372a3.886 3.886 0 0 0 1.417-.923 3.886 3.886 0 0 0 .923-1.417c.198-.51.333-1.09.372-1.942.038-.852.048-1.124.048-3.297s-.01-2.444-.048-3.297c-.04-.852-.174-1.433-.372-1.942a3.886 3.886 0 0 0-.923-1.417 3.886 3.886 0 0 0-1.417-.923c-.51-.198-1.09-.333-1.942-.372C10.444.01 10.172 0 8 0Zm0 1.459c2.132 0 2.39.008 3.233.046.78.036 1.204.166 1.485.276.374.145.641.318.923.6.282.282.455.549.6.923.11.281.24.705.276 1.485.038.844.046 1.101.046 3.233s-.008 2.39-.046 3.233c-.036.78-.166 1.204-.276 1.485a2.39 2.39 0 0 1-.6.923 2.39 2.39 0 0 1-.923.6c-.281.11-.705.24-1.485.276-.844.038-1.101.046-3.233.046s-2.39-.008-3.233-.046c-.78-.036-1.204-.166-1.485-.276a2.39 2.39 0 0 1-.923-.6 2.39 2.39 0 0 1-.6-.923c-.11-.281-.24-.705-.276-1.485-.038-.844-.046-1.101-.046-3.233s.008-2.39.046-3.233c.036-.78.166-1.204.276-1.485a2.39 2.39 0 0 1 .6-.923 2.39 2.39 0 0 1 .923-.6c.281-.11.705-.24 1.485-.276.844-.038 1.101-.046 3.233-.046ZM8 4.687A3.313 3.313 0 1 0 8 11.313 3.313 3.313 0 0 0 8 4.687Zm0 1.459a1.854 1.854 0 1 1 0 3.708 1.854 1.854 0 0 1 0-3.708Zm4.406-1.213a.774.774 0 1 1-1.548 0 .774.774 0 0 1 1.548 0Z"/>
+        </svg>
+      </a>
+      <a href="https://twitter.com/codeutsava" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.143-.004-.284-.01-.424A6.676 6.676 0 0 0 16 3.542a6.56 6.56 0 0 1-1.889.518 3.296 3.296 0 0 0 1.443-1.817 6.575 6.575 0 0 1-2.084.797 3.283 3.283 0 0 0-2.397-1.034c-1.817 0-3.292 1.476-3.292 3.292 0 .258.029.51.085.751A9.325 9.325 0 0 1 1.114 2.1a3.273 3.273 0 0 0-.446 1.654c0 1.14.581 2.146 1.465 2.735a3.27 3.27 0 0 1-1.491-.412v.042c0 1.591 1.13 2.918 2.633 3.219a3.291 3.291 0 0 1-1.485.057 3.292 3.292 0 0 0 3.071 2.282A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.046A9.345 9.345 0 0 0 5.026 15z"/>
+        </svg>
+      </a>
+      <a href="https://www.facebook.com/codeutsava" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.936 2.86 7.192 6.615 7.88v-5.564H4.659V8h1.956V6.275c0-1.933 1.174-2.991 2.898-2.991.825 0 1.533.061 1.74.089v2.02h-1.194c-.935 0-1.116.445-1.116 1.096V8h2.232l-.292 2.316h-1.94V15.88C13.14 15.192 16 11.936 16 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/company/codeutsava/" target ="_blank">
+        <svg fill="#eee" width="28" height="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+        </svg>
+      </a>
+    </div>
+      <hr>
+    </div>
+
+</div>
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <div class = "MOM" >Section</div>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#aboutus" class="nav-link p-0 text-body-secondary">About Us</a></li>
+          <li class="nav-item mb-2"><a href="#events" class="nav-link p-0 text-body-secondary">Events</a></li>
+          <li class="nav-item mb-2"><a href="#faq" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#Contactus" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+     
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <div class = "MOM">Register Here</div>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">SignIn</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+</div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeo6lPYCf5S41KPnDQ9E4r6LOHewawqE5dhPx0PyhdtI5dHb"
+    crossorigin="anonymous"></script>
+</body>
+</html>
